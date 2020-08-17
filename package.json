@@ -1,0 +1,26 @@
+{
+  "name": "yakusoku",
+  "version": "0.0.0",
+  "description": "Library with wrapper functions around promises to provide custom functionality",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc mocha"
+  },
+  "keywords": [
+    "promises",
+    "js",
+    "async",
+    "concurrent",
+    "sequential"
+  ],
+  "author": "Bruno Metzker",
+  "license": "ISC",
+  "dependencies": {
+    "my_inspector": "git+ssh://personal.github.com:brunometzker/inspector.git#master"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.1.1",
+    "nyc": "^15.1.0"
+  }
+}
