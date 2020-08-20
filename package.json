@@ -16,7 +16,7 @@
   "author": "Bruno Metzker",
   "license": "ISC",
   "dependencies": {
-    "my_inspector": "git+ssh://personal.github.com:brunometzker/inspector.git#master"
+    "my_inspector": "git+ssh://git@personal.github.com:brunometzker/inspector.git"
   },
   "devDependencies": {
     "chai": "^4.2.0",
