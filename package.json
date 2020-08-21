@@ -1,6 +1,5 @@
 {
   "name": "yakusoku",
-  "version": "0.0.0",
   "description": "Library with wrapper functions around promises to provide custom functionality",
   "main": "index.js",
   "scripts": {
