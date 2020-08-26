@@ -2,8 +2,8 @@ const inspector = require('my_inspector');
 
 const allSettled = (promises) => {
     if(
-        !inspector.isObjectOfType(promises, Array) || 
-        !promises.every(promise => inspector.isObjectOfType(promise, Promise))
+        !inspector.type.isObjectOfType(promises, Array) || 
+        !promises.every(promise => inspector.type.isObjectOfType(promise, Promise))
     ) {
         throw new TypeError('Argument must be an array of promises');
     }
@@ -68,9 +68,9 @@ const batchMapAsync = (source, sourceItemToPromise, batchSize) => {
     };
 
     if(
-        !inspector.isObjectOfType(source, Array) ||
-        !inspector.isOfType(sourceItemToPromise, 'function') || 
-        !inspector.isOfType(batchSize, 'number')
+        !inspector.type.isObjectOfType(source, Array) ||
+        !inspector.type.isOfType(sourceItemToPromise, 'function') || 
+        !inspector.type.isOfType(batchSize, 'number')
     ) {
         throw new TypeError('Arguments must be an array, a function and a number, respectively');
     }
